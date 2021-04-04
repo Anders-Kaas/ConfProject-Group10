@@ -4,7 +4,7 @@ import java.lang.Math;
 public class AndreasLogic implements IQueensLogic{
     private int size;		// Size of quadratic game board (i.e. size = #rows = #columns)
     private int[][] board;	// Content of the board. Possible values: 0 (empty), 1 (queen), -1 (no queen allowed)
-    private BDDFactory fact = JFactory.init(100000,100000);
+    private BDDFactory fact = JFactory.init(2000000,2000000);
     private int nVars;
   
     //Global BDD that is used to find the (in)valid positions of the queens
